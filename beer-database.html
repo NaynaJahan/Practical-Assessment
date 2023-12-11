@@ -1,0 +1,54 @@
+
+<!-- HTML, CSS, and JavaScript, create a beer database website. 
+Access the PunkAPI "https://api.punkapi.com/v2/beers" 
+to retrieve the beer information. 
+Include a search and favorite feature. Save the file as "beer-database.html". -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beer Information</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    <div id="searchColumn">
+        <header>
+            <h2 id="headerTitle">Beer Information</h2>
+            <div id="searchContainer">
+                <input type="text" id="searchInput" placeholder="Search">
+                <button onclick="searchBeers()">Search</button>
+            </div>
+        </header>
+        <section id="searchResults">
+            <!-- Searched beer information will be displayed here -->
+        </section>
+    </div>
+
+    <div id="beerColumn">
+        <footer>
+            <h2>Available Beers</h2>
+        </footer>
+        <section id="beerList">
+            <!-- All beers from the API will be listed here -->
+        </section>
+    </div>
+
+    <div id="favoritesColumn">
+        <footer>
+            <h2>Favorites</h2>
+            <ul id="favoritesList">
+                <!-- Favourite beers will be listed here -->
+            </ul>
+        </footer>
+    </div>
+
+    <script src="beer.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+
+body {
+    display: flex;
+    background-color: #fff8e7;
+    font-family: Roboto, Arial;
+    margin: 10px;
+    padding: 5px;
+}
+
+header, footer {
+    background-color: #d3a190;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+#searchColumn, #beerColumn, #favoritesColumn {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+#searchInput {
+    border-radius: 3px;
+    border-width: 1px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d3a190;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+header input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: rgb(140, 155, 104);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    white-space: nowrap;
+    transition: opacity 0.15s;
+
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+section {
+    flex-grow: 1; /* allows the section to fill the available space*/
+    padding: 10px;
+}
+
+
+.beer-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.beer-name {
+    flex-grow: 1;
+    margin-right: 10px; /* Space between name and button */
+    word-wrap: break-word; /* Wrap long names */
+}
+
+#beerList div, #searchResults div {
+    border-bottom: 1px solid grey;
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    flex-grow: 1; /* allows the list to fill the available space*/
+}
+
+li {
+    padding: 5px;
+    border-bottom: 1px solid grey;
+}
